@@ -27,7 +27,7 @@
         }
         
         .over{
-            color: rgb(95, 225, 35);
+            color: rgb(29, 190, 69);
             position: absolute;
             top: 50%;
             left: 60%;
@@ -35,10 +35,33 @@
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 100px;
             animation-name: over;
-            animation-duration: 3s;
+            animation-duration: 6s;
         }
         @keyframes over{
-            0% {top: 0px; top: 0px;}
+            0% { top: 0px; top: 0px;}
+        }
+        .remove{
+            color: rgb(35, 92, 225);
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%,-50%);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 100px;
+            animation-name: remove;
+            animation-duration: 15s;
+            animation-delay: 3s;
+        }
+        @keyframes remove{
+            0% {
+                 
+                 margin-left: 0;
+            }
+            100% {
+                
+                margin-left: -250%;
+            }
+            
         }
         .year{
             color: white;
@@ -60,16 +83,16 @@
         .art{
             color: green;
             position: absolute;
-            top: 63%;
-            left: 57%;
+            top: 83%;
+            left: 77%;
             transform: translate(-50%,-50%);
             font-size: 20px;
 
         }
         .name{
             position: absolute;
-            top: 68%;
-            left: 60%;
+            top: 88%;
+            left: 80%;
             transform: translate(-50%,-50%);
             font-size: bold;
             font-family: 'Dancing Script', cursive;
@@ -85,6 +108,9 @@
     <div class="year">
         <div class="new">
             202
+        </div>
+        <div class="remove">
+            3
         </div>
         <div class="over">
             4
